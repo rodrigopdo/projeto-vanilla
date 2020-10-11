@@ -1,0 +1,154 @@
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background: #205527;
+    transition: 0.3s ease;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo a img {
+    display: block;
+    width: 150px;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.3s ease;  
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 30px 25px;
+    font-size: 16px;
+    line-height: 1;
+    transition: 0.3s ease;
+}
+
+.menu li a:hover {
+    box-shadow: 0 -5px 0 #1DB954 inset,
+    500px 0 0 rgba(255,255,255,0.03) inset;
+    padding: 25px 25px 35px 25px;
+}
+
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: transform 0.7s ease;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease ;
+}
+
+.hamburger:before {
+    top: -10px;
+    width: 30px;  
+}
+
+.hamburger:after {
+    top: 10px;
+    width: 30px;  
+}
+
+.toggleMenu {
+    position: absolute; 
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;  
+}
+
+.hamburger,
+.toggleMenu {
+    display: none;
+}
+
+.navegacao input:checked ~ .hamburger {
+    background: transparent;
+}
+
+.navegacao input:checked ~ .hamburger:before {
+    top: 0;
+    transform: rotate(-45deg);
+    
+}
+
+.navegacao input:checked ~ .hamburger:after {
+    top: 0;
+    transform: rotate(45deg);  
+}
+
+.navegacao input:checked ~ .menu {
+    right: 0;
+    box-shadow: -20px 0 40px  rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 992px) {
+    .hamburger,
+    .toggleMenu {
+        display: block;
+    }
+
+    .header {
+        padding: 20px 20px; 
+    }
+    
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: #205527;
+        width: 250px;
+        height: 100%;
+        padding-top: 66px;
+        transition: 0.8s ease;
+    }
+    
+    .menu li {
+        width: 100%;
+    }
+    
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 16px;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset;
+    }
+}
+
+
+
