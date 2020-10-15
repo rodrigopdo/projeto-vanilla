@@ -8,10 +8,12 @@
     
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
    
-    <title>Projeto Vanilla</title>
+    <title>Página Inicial</title>
   
 </head>
 
@@ -36,7 +38,7 @@
             
             <ul class="menu">   
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">Página Inicial</a>
                 </li>
                 
                 <li>
@@ -51,35 +53,108 @@
         </nav>
         
     </header>
+
+<!--FIM DA NAVBAR===================================-->
+
+<!--INÍCIO DA PRINCIPAL===================================-->
     
-    <section>
-        
+    <main class="container">
+          
+        <div  class="flex-main" >
+            
+            <div class="flex-main-item1">
+                
+                <p>Agroforte Digital</p>    
+                
+                <h1>O Parceiro Digital</h1>
+                <h2>do Produtor Rural</h2>
+                
+                <h4>Aqui você encontra a solução de crédito perfeita para o seu negócio. Somos um serviço 100% digital que chegou ao campo para ajudar o produtor rural</h4>
+                
+                <a id="btn-cadastro" class="cta-1" >Quero Conhecer</a>
+                
+                <a class="cta-2" href="#">Já sou cliente</a>
+            
+            </div>
+            
+            <div class="flex-main-item2" >
+            
+                <img class="img-main" src="img/ilust-jumbox.png" alt="Agroforte">  
+                
+            </div>
+            
+        </div>
+    
+    </main>
+
+    <div class="produtos">
+
+        <div class="container ">
+            
+            <h1>Produtos e Serviços</h1>
+           
+            <div  class="grid-cards">
+      
+                <div class="card1">
+                        
+                    <img class="img-cards" src="img/ilustra.png" alt="Antecipação">
+
+                </div>
+                
+                <div class="card2">
+
+                    <img class="img-cards" src="img/ilustra.png" alt="Antecipação">
+
+                    <h3>Crédito para Adequação</h3>
+                    <p>Tenha o crédito ideal para investir em sua estrutura.</p>
+
+                    <div class="flex-btn">
+
+                        <a class="btn-md" href="#">Simular </a>
+                         
+                        <a class="btn-outline-md" href="#">Saber mais</a>
+                        
+                    </div>
+
+                </div>
+                
+                <div class="card3">
+                    
+                    <img class="img-cards" src="img/ilustra.png" alt="Antecipação">
+
+                </div>
+                        
+            </div>
+    
+        </div>
+
+    </div>
+
+    <section class="sobre">
+
         <div class="container ">
             
             <div  class="flex-section" >
-                
-                <div class="flex-section-item1">
-                  
-                        <h1>O parceiro digital do produtor rural</h1>
-                        
-                        <h3>typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</h3>
+
+                <div>
+                     
+                    <h1>Sobre a AgroForte</h1>
                     
-                        <a class="cta-1" href="#">Estou interessado</a>
-                                   
+                    <h4 class="texto-sobre">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</h4>
+                    
                 </div>
+
+                <div>
                 
-                <div class="flex-section-item2" >
-                   
-                    <img class="imgSection" src="img/ilust-jumbox.png" alt="Agroforte">  
-                
+                    <img class="img-section" src="img/img-sobre3.png" alt="Agroforte">  
+                    
                 </div>
                 
             </div>
-        
+    
         </div>
 
     </section>
-
 
     <div>
 
@@ -89,9 +164,37 @@
         
     </div>
 
+    <!--MODAL CADASTRO-->
+
+    <div id="modal-cadastro" class="modal-container">
+
+        <div class="modal-content">
+            <span class="btn-fechar">x</span>
+            <h3>Faça uma simulação</h3>
+            
+            <label>Nome Completo<span>*</span></label>
+            <input type="text" required autocomplete="off" placeholder="Seu nome completo">
+           
+            <label>E-mail<span>*</span></label>
+            <input type="email" required autocomplete="off" placeholder="Seu melhor e-mail">
+           
+            <label>Celular<span>*</span></label>
+            <input type="text" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}" required autocomplete="off" placeholder="(00) 00000-0000">
+           
+            <label>Número do CPF<span>*</span></label>
+            <input type="text" required autocomplete="off" placeholder="Somente números">
+
+            <a class="termos-uso">Termos de Uso e Privacidade</a>
+           
+            <a id="#" class="btn-block" >Enviar meus dados</a>
+
+        </div>
+        
+    </div>
+
     <script src="https://kit.fontawesome.com/3479e9d6ad.js" crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

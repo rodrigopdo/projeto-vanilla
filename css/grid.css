@@ -1,0 +1,183 @@
+
+.container  {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 1170px) {
+    .container {
+        max-width: 1170px;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .cta-1 {
+        width: 100%;
+        display: block;
+    }  
+    .cta-2 {
+        width: 100%;
+        display: block;
+        margin-top: 18px;
+    }  
+    .flex-main {
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+    .flex-main-item1 h3 {
+        font-size: 16px;
+    }
+
+    .flex-main-item2 {
+        margin-top: 140px;
+    }
+
+    main p  {
+        font-size: 12px;
+     }
+    
+    main h4 {
+        font-size: 14px;
+     }
+           
+}
+
+
+
+@media (min-width: 300px) {
+   
+    .container {
+        max-width: 320px;
+    }
+    
+    main h1 {
+        font-size: 40px;
+    }
+    
+    main h2 {
+        font-size: 20px;
+    }
+    
+    main h3 {
+        font-size: 20px;
+    }
+
+    section h1 {
+        font-size: 30px;
+    }
+    
+}
+
+@media (min-width: 476px) {
+    
+    .container {
+        max-width: 440px;
+    }
+    
+    main h1 {
+        font-size: 45px;
+    }
+
+    main h2 {
+        font-size: 20px;
+    }
+
+    section h1 {
+    font-size: 45px;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .container {
+        max-width: 560px;
+    }
+
+    main h1 {
+        font-size: 50px;
+    }
+
+    main h2 {
+        font-size: 40px;
+        }
+
+    section h1 {
+        font-size: 45px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    
+    .container {
+        max-width: 720px;
+    }
+    
+    main h1 {
+        font-size: 55px;
+    }
+    
+    main h2 {
+        font-size: 40px;
+        }
+
+    section h1 {
+        font-size: 50px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    
+    .container {
+        max-width: 970px;
+    }
+    
+    main h1 {
+        font-size: 60px;
+    }
+
+    main h2 {
+        font-size: 45px;
+        }
+
+    section h1 {
+        font-size: 55px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    
+    .container {
+        max-width: 1140px;
+    }
+    
+    main h1 {
+        font-size: 65px;
+    }
+
+    main h2 {
+        font-size: 45px;
+        }
+
+    section h1 {
+        font-size: 60px;
+    }
+}
+    
+    /*CONTENT DRIVEN EM VEZ DE DEVICE-DRIVEN BREAKPOINTS
+    @media (min-width: 37em) { ... } /* 592px 
+    @media (min-width: 41em) { ... } /* 656px 
+    @media (min-width: 47em) { ... } /* 752px 
+    @media (min-width: 68em) { ... } /* 1088px 
+    @media (min-width: 82em) { ... } /* 1312px 
+    @media (min-width: 100em) { ... } /* 1600px 
+    */
+    

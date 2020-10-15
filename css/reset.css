@@ -1,0 +1,42 @@
+/*=========RESET====================================*/
+
+* { /*Colocar tags e tirar "*" */
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;  
+}
+
+html, body {
+    height: 100%;
+    font-family: "Montserrat", sans-serif;   
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+input {
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type=text]{
+    outline:none;
+  } 
+
+  input[type=email], 
+  input[type=text],
+  input[type=number]{
+    outline:none;
+  } 
+
+input::placeholder {
+    text-transform: none;
+}

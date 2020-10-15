@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+   
+    <title>Adequação</title>
+  
+</head>
+
+<body>
+
+    <header class="header">
+        
+            <div class="logo">
+                
+                <a href="index.html">
+                    <img src="img/logo-agro-ventura.png" alt="">
+            </a>
+            
+        </div>
+        
+        <nav class="navegacao">
+            
+            <input type="checkbox" class="toggleMenu">
+            
+            <div class="hamburger"></div>
+            
+            
+            <ul class="menu">   
+                <li>
+                    <a href="index.html">Página Inicial</a>
+                </li>
+                
+                <li>
+                    <a href="#">Produto</a>
+                </li>
+                
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>     
+            
+        </nav>
+        
+    </header>
+    
+<!--FIM DA NAVBAR===================================-->
+  
+    <div class="container"> 
+              
+        <h1>Crédito para adequação</h1>
+        
+        <form>
+            
+            <label class="lead textoRange text-success mb-4">Qual a destinação do recurso?</label>
+            <select class="form-control form-control-lg">
+                <option selected>Selecione</option>
+                <option value="1">Energia Renovável</option>
+                <option value="2">Adequação</option>
+                <option value="3">Bem-estar animal</option>
+                <option value="4">Outra..</option>  
+            </select>
+
+            <label class="lead textoRange text-success">Qual o valor gostaria de contratar?</label>
+
+            <p class="valorRange"><small style="font-size: 20px;" class="text-success">R$</small> <span id="valor"></span>.000</p>
+                <input type="range" min="10" max="100" step="5" value="20" class="slider" id="valorSimulacao">
+            
+            <label class="lead textoRange text-success">Em quantas parcelas?</label>      
+
+            <p class="valorRange"><small style="font-size: 20px;" class="text-success">X</small> <span id="valorParcelas"></span></p>
+                <input type="range" min="0" max="48" step="12" value="12" class="slider" id="qtdParcelas">
+
+            <div class="d-flex justify-content-center mt-5">
+                
+                <a href="endereco.html" class="btn btn-success mt-4 shadow btn-block mb-5 btn-lg" role="button">Continuar  <i class="fas fa-angle-double-right"></i></a>
+            
+            </div>
+                    
+        </form>
+
+    </div>
+  
+
+    <div>
+
+        <footer>
+            <p>&copy; 2020 - Agroforte - Todos os direitos reservados</p>
+        </footer>
+        
+    </div>
+   
+        
+<script src="https://kit.fontawesome.com/3479e9d6ad.js" crossorigin="anonymous"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
