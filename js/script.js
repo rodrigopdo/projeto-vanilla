@@ -1,5 +1,3 @@
-/* INÍCIO MODAL CADASTRO===============================================*/
-
 const modal = document.getElementById("modal-cadastro");
 
 const btn = document.getElementById("btn-cadastro");
@@ -20,28 +18,3 @@ window.onclick = function(event) {
     }
 }
 
-/* FIM MODAL CADASTRO=======================================================*/
-
-/* INÍCIO SIMULAÇÃO ADEQUACAO===============================================*/
-
-let slider = document.getElementById("valorSimulacao");
-let output = document.getElementById("valor");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-    output.innerHTML = this.value;
-}
-
-let slider1 = document.getElementById("qtdParcelas");
-let output1 = document.getElementById("valorParcelas");
-output1.innerHTML = slider1.value;
-
-slider1.oninput = function() {
-    output1.innerHTML = this.value;
-}
-
-$(function() {
-      $( "#calendarioAdequacao" ).datepicker();
-});
-
-/*FIM SIMULAÇÃO ADEQUACAO===============================================*/

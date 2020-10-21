@@ -7,6 +7,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;  
+    text-decoration: none;
 }
 
 html, body {
@@ -26,17 +27,26 @@ input {
     -moz-box-shadow: none;
     box-shadow: none;
 }
-
-input[type=text]{
+select,
+button,
+input,
+input[type=email], 
+input[type=text],
+input[type=number],
+input[type=text]   {
     outline:none;
-  } 
-
-  input[type=email], 
-  input[type=text],
-  input[type=number]{
-    outline:none;
-  } 
+} 
 
 input::placeholder {
     text-transform: none;
 }
+
+button {
+    background: none;
+}
+
+input[type=email] {
+    text-transform: none; 
+  }
+  
+

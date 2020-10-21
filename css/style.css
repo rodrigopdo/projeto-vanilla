@@ -1,12 +1,4 @@
 
-/*==INÍCIO HEADER============================*/
-
-.flex-main {
-  display: flex;
-  flex-direction: row;
-  margin: 140px 0 160px; 
-}
-
 main h1 {
    color:#333333;
    letter-spacing: -2px;
@@ -40,9 +32,11 @@ main p {
 }
 
 .img-main {
-    width: 100%;
+    float: right;
+    width: 80%;
+    justify-content: end;
     height: 400px;
-    margin-left: auto;  
+    margin-right: auto;  
 }
 
 .cta-1 {
@@ -60,7 +54,7 @@ main p {
     top: 70px;
     margin-right: 10px;
     cursor: pointer;
-    transition: 0.4s ease;  
+    transition: 0.3s ease;  
 }
 
 .cta-1:hover {
@@ -70,7 +64,7 @@ main p {
     opacity: 0.6;    
 }
 
-.cta-2 {
+.cta-outline-2 {
     text-decoration: none;
     background: white;
     text-align: center;
@@ -84,10 +78,10 @@ main p {
     position: relative;
     top: 70px;
     cursor: pointer;
-    transition: 0.4s ease;   
+    transition: 0.3s ease;   
 }
 
-.cta-2:hover {
+.cta-outline-2:hover {
   box-shadow: 0 -3px 0 #205527 inset,
   500px 0 0 rgba(255,255,255,0.03) inset;
   top: 66px;
@@ -95,7 +89,7 @@ main p {
   color:#1DB954;  
 }
 
-/*==FIM DO HEADER ===========================*/
+/*==FIM DO MAIN =============================*/
 
 /*INÍCIO PRODUTOS ===========================*/
 
@@ -103,6 +97,7 @@ main p {
   background-color: #2F384B;
   padding: 140px 0 140px;
 }
+
 .produtos h1 {
   color: #1DB954;
   text-align: center;
@@ -117,7 +112,7 @@ main p {
 
 .btn-md {
   background: #1DB954;
-  width: 80%;
+  width: 60%;
   margin: 0 auto 30px;
   text-align: center;
   border: 1px solid #1DB954;
@@ -132,7 +127,7 @@ main p {
 }
 
 .btn-outline-md {
-  width: 80%;
+  width: 60%;
   margin: 0 auto 50px;
   text-align: center;
   border: 2px solid #1DB954;
@@ -163,6 +158,7 @@ main p {
   font-size: 32px;
   text-align: center;
   padding-top: 80px;
+  margin: 0 15px 0
 }
 
 .grid-cards p {
@@ -170,7 +166,7 @@ main p {
   font-size: 18px;
   text-align: center;
   padding: 20px 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
       
 .card1 {
@@ -214,29 +210,29 @@ main p {
 
 /*INÍCIO SOBRE ==============================*/
 
-.sobre {
-  background-color:#1DB954;
-  padding: 60px 20px;
-  color:white;
-}
-
-.texto-sobre {
-  margin: 30px 60px 0;
-  min-width: 350px;
-}
-
 .flex-section {
-  display: block;
-  justify-content: center;
-  text-align: center; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 100px auto 100px;
+  
 }
 
+section > div {
+  padding: 150px auto 50px; 
+}
 
-.img-section {
-  width: 100%;
-  margin-top: 50px;
-  min-width: 300px;
-  max-width: 900px;
+section p {
+  color: #333333;
+  width: 80%;
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+section h1 {
+  color: #28a745;
+  padding: 50px auto 0; 
 }
 
 
@@ -245,16 +241,19 @@ main p {
 /*INÍCIO DO FOOTER =================================*/
 
 footer {
-   height: 150px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-   background-color:#1DB954;
-   position: static;
-   bottom: 0;
-   width: 100%;
+  position: relative;
+  bottom:0;
+  left: 0;
+	width:100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color:#1DB954;
+ 
 }
+
 
 /*FIM DO FOOTER =====================================*/
 
@@ -280,6 +279,7 @@ footer {
   padding: 20px;
   width: 50%;
   height: auto;
+  border-radius: 10px;
   min-width: 350px;
   max-width: 500px;
   animation: modal 0.7s;
@@ -343,7 +343,7 @@ footer {
 
 .modal-content input:focus {
   display: block;
-  border: 5px solid #1DB954;
+  border: 3px solid #1DB954;
   border-radius: 10px;
   color: #1DB954; 
   font-weight: bold;
@@ -353,33 +353,41 @@ footer {
 .termos-uso {
   color: white;
   text-decoration: underline;
+  font-size: 14px;
 }
 
-.btn-block {
+.btn-modal {
   display: block;
-  width: 90%;
+  width: 70%;
   text-decoration: none;
-  background: #1DB954;
   padding: 20px 0;
   border: 1px solid #1DB954;
   border-radius: 50px;
-  color: white;
+  color: #1DB954;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.4s ease;  
   margin: 40px auto;
 }
 
-/*INÍCIO SLIDE RANGE===========================================*/
+
+/*FIM MODAL DADOS INICIAIS =======================*/
+
+/*INÍCIO ADEQUAÇÃO===========================================*/
+
+#adequacao {
+  background-color: #2F384B;
+  padding: 30px 0 70px;
+}
 
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 6px;
+  margin-top: 30px;
+  height: 4px;
   border-radius: 5px;
-  background: #d3d3d3;
+  background: #1DB954;
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
@@ -408,19 +416,176 @@ footer {
   cursor: pointer;
 }
 
-.valorRange {
-  font-size: 50px;
-  margin: 10px;
+.valor-range {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.valor-range small {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1DB954;
+}
+
+.valor-range {
+  color: white;
 }
 
 .textoRange {
-  margin-top: 60px;
+  display: block;
+  color:white;
+  font-weight: 500;
+  margin-top: 50px;
 }
 
+.form-adequacao {
+  margin: 0 auto 0;
+  width: 50%;
+  min-width: 280px;
+}
 
+.form-adequacao h1 {
+ color: white;
+ padding-top: 60px;
+}
 
+.select-destinacao {
+  display: block;
+  width: 100%;
+  padding: 15px 8px;
+  margin: 20px auto 40px;
+  font-size: 18px;
+  color: white;
+  background-color: #2F384B;
+  background-clip: padding-box;
+  border: 1px solid #1DB954;
+  border-radius: 5px;
+}
 
+.select-destinacao:focus {
+  border: 2px solid #1DB954;
+}
 
+.btn-outline-lg {
+  display: block;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 60px auto 0;
+  padding: 18px;
+  border: 1.5px solid #1DB954;
+  border-radius: 50px;
+  color: #1DB954;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
 
+/*INÍCIO FORM ENDERECO=========================*/
 
+#form-endereco h2 {
+ margin: 80px auto 50px;
+ color: #28a745;
+}
+
+#form-endereco h3 {
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+#form-endereco i {
+  color: #1DB954;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 25px;
+}
+
+.label-float a {
+
+  margin: 0 auto 0 10px;
+  color: #2F384B;
+  font-size: 12px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.label-float input{
+  border: 0;
+  border: 1px solid #1DB954;
+  border-radius: 50px;
+  height: 50px;
+  width: 100%;
+  padding-left: 18px;
+  display: block;
+  color: black;
+  font-weight: 100;
+  font-size: 20px;
+  min-width: 180px;
+  font-size: 18px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+ 
+}
+
+.label-float input:focus{
+  border: 2px solid #1DB954;
+  font-size: 22px;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  margin: 28px 0 0 20px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.label-float input:focus:invalid{
+  border: 2px solid #1DB954;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 12px;
+  margin-top: -8px;
+  color: #1DB954;
+}
+
+.btn-rounded {
+  float: right;
+  margin: 30px 50px 50px auto;
+  justify-content: end;
+  background-color: #1DB954;
+  color: white;
+  font-size: 35px;
+  padding: 20px 25px;
+  border-radius: 50%;
+}
+
+.btn-outline-rounded {
+  float: right;
+  margin: 40px 0 0 auto;
+  justify-content: end;
+  color: #1DB954;
+  border: 2.5px solid #1DB954;
+  font-size: 35px;
+  padding: 20px 26px;
+  border-radius: 50%;
+}
 

@@ -46,8 +46,8 @@
                 </li>
                 
                 <li>
-                    <a href="contato.html">Contato</a>
                 </li>
+                <a href="contato.html">Contato</a>
             </ul>     
             
         </nav>
@@ -62,7 +62,7 @@
           
         <div  class="flex-main" >
             
-            <div class="flex-main-item1">
+            <div>
                 
                 <p>Agroforte Digital</p>    
                 
@@ -73,11 +73,11 @@
                 
                 <a id="btn-cadastro" class="cta-1" >Quero Conhecer</a>
                 
-                <a class="cta-2" href="#">Já sou cliente</a>
+                <a class="cta-outline-2" href="#">Já sou cliente</a>
             
             </div>
             
-            <div class="flex-main-item2" >
+            <div>
             
                 <img class="img-main" src="img/ilust-jumbox.png" alt="Agroforte">  
                 
@@ -99,18 +99,30 @@
                         
                     <img class="img-cards" src="img/ilustra.png" alt="Antecipação">
 
+                    <h3>Crédito para Adequação</h3>
+                    <p>Tenha o crédito ideal para investir em sua estrutura.</p>
+
+                    <div class="flex-btn">
+
+                        <button class="btn-md" type="submit">Em breve</button>
+                         
+                        <a class="btn-outline-md" href="#">Saber mais</a>
+                        
+                    </div>
+
                 </div>
                 
                 <div class="card2">
 
                     <img class="img-cards" src="img/ilustra.png" alt="Antecipação">
 
-                    <h3>Crédito para Adequação</h3>
+                    <h3>Crédito para Custeio</h3>
+                    
                     <p>Tenha o crédito ideal para investir em sua estrutura.</p>
 
                     <div class="flex-btn">
 
-                        <a class="btn-md" href="#">Simular </a>
+                        <button class="btn-md" type="submit" disabled>Em breve</button>
                          
                         <a class="btn-outline-md" href="#">Saber mais</a>
                         
@@ -122,6 +134,18 @@
                     
                     <img class="img-cards" src="img/ilustra.png" alt="Antecipação">
 
+                    <h3>Antecipação de Recebíveis</h3>
+                    
+                    <p>Tenha o crédito ideal para investir em sua estrutura.</p>
+
+                    <div class="flex-btn">
+
+                        <button class="btn-md" type="submit" disabled>Em breve</button>
+                         
+                        <a class="btn-outline-md" href="#">Saber mais</a>
+                        
+                    </div>
+
                 </div>
                         
             </div>
@@ -130,23 +154,27 @@
 
     </div>
 
-    <section class="sobre">
+<!--FIM PRODUTOS ===================================================-->
 
-        <div class="container ">
+<!--INÍCIO SOBRE ===================================================-->
+
+    <section>
+
+        <div class="container-sm">
             
-            <div  class="flex-section" >
+            <div class="flex-section">
 
-                <div>
+                <div class="col-6">
                      
                     <h1>Sobre a AgroForte</h1>
                     
-                    <h4 class="texto-sobre">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
                     
                 </div>
 
-                <div>
+                <div class="col-6">
                 
-                    <img class="img-section" src="img/img-sobre3.png" alt="Agroforte">  
+                    <img src="img/ilust-jumbox.png" alt="Agroforte" style="height: 350px; width: 330px; margin-top: 60px;">  
                     
                 </div>
                 
@@ -168,27 +196,27 @@
 
     <div id="modal-cadastro" class="modal-container">
 
-        <div class="modal-content">
+        <form id=modalDados class="modal-content">
             <span class="btn-fechar">x</span>
             <h3>Faça uma simulação</h3>
             
-            <label>Nome Completo<span>*</span></label>
-            <input type="text" required autocomplete="off" placeholder="Seu nome completo">
+            <label>Nome Completo</label>
+            <input type="text" required  title="Escreva o seu nome completo"  placeholder="Seu nome completo">
            
-            <label>E-mail<span>*</span></label>
-            <input type="email" required autocomplete="off" placeholder="Seu melhor e-mail">
+            <label>E-mail</label>
+            <input type="email" required title="Escreva o seu melhor e-mail" autocomplete="email"  placeholder="Seu melhor e-mail">
            
-            <label>Celular<span>*</span></label>
-            <input type="text" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}" required autocomplete="off" placeholder="(00) 00000-0000">
+            <label>Celular</label>
+            <input type="text" required title="coloque o número do celular" pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$" placeholder="(00) 00000-0000">
            
-            <label>Número do CPF<span>*</span></label>
-            <input type="text" required autocomplete="off" placeholder="Somente números">
+            <label>Número do CPF</label>
+            <input type="text" required pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" title="Coloque o número do seu CPF" placeholder="Somente números">
 
             <a class="termos-uso">Termos de Uso e Privacidade</a>
            
-            <a id="#" class="btn-block" >Enviar meus dados</a>
+            <button class="btn-modal" type="submit" value="Enviar" >Enviar meus dados</button>
 
-        </div>
+        </form>
         
     </div>
 
