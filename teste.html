@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+<style>
+
+.div-1 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.div-2 {
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+.div-3 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.div-4 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+
+.flex-container {
+    background-color: lightblue;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 1170px) {
+    .flex-container {
+        max-width: 1170px;
+        padding: 0;
+    }
+}
+
+.flex-teste {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'item1 item2 item2 item2';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+</style>
+
+</head>
+
+<body>
+   <div class="flex-container">
+        <div class="flex-teste">
+            <div class="div-1">col-6</div>
+            <div class="div-2">col-6</div>
+            <div class="div-3">col-6</div>
+            <div class="div-4">col-6</div>        
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="grid-2-col">
+            
+            <div class="label-float"> 
+                
+                <input type="text" id="inputCep" required placeholder="#">
+                
+                <label for="inputCep">CEP</label>
+                <a href="">Não sei o CEP</a>
+                
+            </div>
+            
+            <div class="label-float">
+                
+                <input type="text" name="endereco" required placeholder="#"> 
+                
+                <label for="inputEndereco">Endereço</label>
+                
+            </div>
+            
+        </div>
+        <div class="grid-container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>  
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+            <div class="item6">6</div>
+            <div class="item7">7</div>
+            <div class="item8">8</div>
+            <div class="item9">9</div>
+          </div>
+        
+    </div>
+
+
+</body>
+</html>
