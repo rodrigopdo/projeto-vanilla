@@ -42,7 +42,7 @@
                 </li>
                 
                 <li>
-                    <a href="#">Produto</a>
+                    <a href="#">Produtos</a>
                 </li>
                 
                 <li>
@@ -56,15 +56,12 @@
       
 <!--FIM DA NAVBAR=========================-->
 
-<div>
-
-
-
+ 
   <div class="container-sm">
 
     <div>
-
-      <form id="form-endereco">
+      
+      <form id="formEndereco">
 
           <h2>Precisamos de mais algumas informações para continuar...</h2>
                   
@@ -74,7 +71,7 @@
                 
             <div class="label-float"> 
               
-              <input id="cep" type="text" name="cep" autofocus maxlength="9" title="informe o CEP da sua residência" required placeholder="#">
+              <input id="cep" type="text" name="cep" autofocus title="informe o CEP da sua residência" required placeholder="#" data-js="cep">
               
               <label for="cep">CEP</label>
               
@@ -146,13 +143,9 @@
 
       </form> 
 
-      <div>
-
-        
-      </div>
-      
-      <img src="img/ilust-jumbox.png" alt="Agroforte" style="height: 300px; width: 70%; margin: 40px auto 100px; ">  
-    </div>
+          <img src="img/ilust-jumbox.png" alt="Agroforte" style="height: 300px; width: 70%; margin: 40px auto 100px; ">  
+  
+    </div>  
 
   </div>
   
@@ -258,7 +251,9 @@ cep.addEventListener("blur",(e) => {
 
 
 </script>
-    
+
+<script src="js/modal.js"></script>
+
 <script src="https://kit.fontawesome.com/3479e9d6ad.js" crossorigin="anonymous"></script>
 
 </body>

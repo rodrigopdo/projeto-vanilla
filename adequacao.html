@@ -42,7 +42,7 @@
                 </li>
                 
                 <li>
-                    <a href="#">Produto</a>
+                    <a href="#">Produtos</a>
                 </li>
                 
                 <li>
@@ -59,35 +59,53 @@
 <div id="adequacao">
 
     <div class="container"> 
-              
-        <form class="form-adequacao">
+        
+        <div class="flex-main-adequacao">
 
-                <h1>Crédito para adequação</h1>
+            <div class="col-6">
+
+                <form class="form-adequacao">
+
+                    <h1>Crédito para adequação</h1>
+                    
+                    <label class="textoRange">Qual a destinação do recurso?</label>
+                    <select class="select-destinacao">
+                        <option selected>Selecione..</option>
+                        <option value="1">Energia Renovável</option>
+                        <option value="2">Adequação</option>
+                        <option value="3">Bem-estar animal</option>
+                        <option value="4">Outra..</option>  
+                    </select>
+                    
+                    <label class="textoRange">Qual o valor gostaria de contratar?</label>
+                    
+                    <p class="valor-range"><small>R$ </small><span id="valor"></span>.000</p>
+                    
+                    <input type="range" min="10" max="100" step="5" value="20" class="slider" id="valorSimulacao">
+                    
+                    <label class="lead textoRange text-success">Em quantas parcelas?</label>      
+                    
+                    <p class="valor-range"><small>X</small> <span id="valorParcelas"></span></p>
+                    
+                    <input type="range" min="0" max="48" step="12" value="12" class="slider" id="qtdParcelas">
+                    
+                    <a class="btn-outline-lg" href="endereco.html" >Continuar</a>
+                                    
+                </form>
+
+            </div>
+
+            <div class="col-6">
+
+                <div class="form-adequacao">
+
+                    <img class="img-adequacao" src="img/banner-figma2.png" alt="Agroforte">  
+                    
+                </div>
                 
-                <label class="textoRange">Qual a destinação do recurso?</label>
-                <select class="select-destinacao">
-                    <option selected>Selecione..</option>
-                    <option value="1">Energia Renovável</option>
-                    <option value="2">Adequação</option>
-                    <option value="3">Bem-estar animal</option>
-                    <option value="4">Outra..</option>  
-                </select>
-                
-                <label class="textoRange">Qual o valor gostaria de contratar?</label>
-                
-                <p class="valor-range"><small>R$ </small><span id="valor"></span>.000</p>
-                
-                <input type="range" min="10" max="100" step="5" value="20" class="slider" id="valorSimulacao">
-                
-                <label class="lead textoRange text-success">Em quantas parcelas?</label>      
-                
-                <p class="valor-range"><small>X</small> <span id="valorParcelas"></span></p>
-                
-                <input type="range" min="0" max="48" step="12" value="12" class="slider" id="qtdParcelas">
-                
-                <a class="btn-outline-lg" href="endereco.html" >Continuar</a>
-                            
-        </form>
+            </div>
+
+        </div>
 
     </div>
   

@@ -42,12 +42,12 @@
                 </li>
                 
                 <li>
-                    <a href="#">Produto</a>
+                    <a href="#">Produtos</a>
                 </li>
                 
                 <li>
+                    <a href="contato.html">Contato</a>
                 </li>
-                <a href="contato.html">Contato</a>
             </ul>     
             
         </nav>
@@ -69,9 +69,9 @@
                 <h1>O Parceiro Digital</h1>
                 <h2>do Produtor Rural</h2>
                 
-                <h4>Aqui você encontra a solução de crédito perfeita para o seu negócio. Somos um serviço 100% digital que chegou ao campo para ajudar o produtor rural</h4>
+                <h4>Somos 100% digital e chegamos ao campo para ajudar o produtor rural em seu negócio.</h4>
                 
-                <a id="btn-cadastro" class="cta-1" >Quero Conhecer</a>
+                <a id="btnCadastro" class="cta-1" >Quero Conhecer</a>
                 
                 <a class="cta-outline-2" href="#">Já sou cliente</a>
             
@@ -89,7 +89,7 @@
 
     <div class="produtos">
 
-        <div class="container ">
+        <div class="container">
             
             <h1>Produtos e Serviços</h1>
            
@@ -97,19 +97,20 @@
       
                 <div class="card1">
                         
-                    <img class="img-cards" src="img/ilustra.png" alt="Antecipação">
+                    <img class="img-cards" src="img/Group 435.png" alt="Antecipação">
 
                     <h3>Crédito para Adequação</h3>
-                    <p>Tenha o crédito ideal para investir em sua estrutura.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 
                     <div class="flex-btn">
-
-                        <button class="btn-md" type="submit">Em breve</button>
-                         
-                        <a class="btn-outline-md" href="#">Saber mais</a>
                         
-                    </div>
 
+                        <a class="btn-md-1" href="adequacao.html">Contratar</a>
+                         
+                        <a id="btnModalAdequacao" class="btn-outline-md-1" >Saber mais</a>
+                    
+                    </div>
+                        
                 </div>
                 
                 <div class="card2">
@@ -118,13 +119,13 @@
 
                     <h3>Crédito para Custeio</h3>
                     
-                    <p>Tenha o crédito ideal para investir em sua estrutura.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 
                     <div class="flex-btn">
 
-                        <button class="btn-md" type="submit" disabled>Em breve</button>
+                        <button class="btn-md-1" type="submit" disabled>Em breve</button>
                          
-                        <a class="btn-outline-md" href="#">Saber mais</a>
+                        <a class="btn-outline-md-1" href="#">Saber mais</a>
                         
                     </div>
 
@@ -132,17 +133,17 @@
                 
                 <div class="card3">
                     
-                    <img class="img-cards" src="img/ilustra.png" alt="Antecipação">
+                    <img class="img-cards" src="img/Group 435.png" alt="Antecipação">
 
                     <h3>Antecipação de Recebíveis</h3>
                     
-                    <p>Tenha o crédito ideal para investir em sua estrutura.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 
                     <div class="flex-btn">
 
-                        <button class="btn-md" type="submit" disabled>Em breve</button>
+                        <button class="btn-md-1" type="submit" disabled>Em breve</button>
                          
-                        <a class="btn-outline-md" href="#">Saber mais</a>
+                        <a class="btn-outline-md-1" href="#">Saber mais</a>
                         
                     </div>
 
@@ -160,7 +161,7 @@
 
     <section>
 
-        <div class="container-sm">
+        <div class="container">
             
             <div class="flex-section">
 
@@ -174,7 +175,7 @@
 
                 <div class="col-6">
                 
-                    <img src="img/ilust-jumbox.png" alt="Agroforte" style="height: 350px; width: 330px; margin-top: 60px;">  
+                    <img src="img/ilust-jumbox.png" alt="Agroforte" style="height: 250px; width: 100%; margin: 30px auto 30px;">  
                     
                 </div>
                 
@@ -183,46 +184,83 @@
         </div>
 
     </section>
-
-    <div>
-
+    
         <footer>
             <p>&copy; 2020 - Agroforte - Todos os direitos reservados</p>
         </footer>
         
-    </div>
+   
 
-    <!--MODAL CADASTRO-->
+<!--INÍCIO MODAL CADASTRO===========================-->
 
-    <div id="modal-cadastro" class="modal-container">
+    <div id="modalCadastro" class="modal-container">
 
-        <form id=modalDados class="modal-content">
+        <form id=modalDadosIniciais class="modal-content">
+           
             <span class="btn-fechar">x</span>
-            <h3>Faça uma simulação</h3>
+            
+            <img src="img/Logo_tagline.png" alt="">
+
+            <h3>Simule uma contratação!</h3>
             
             <label>Nome Completo</label>
-            <input type="text" required  title="Escreva o seu nome completo"  placeholder="Seu nome completo">
+            <input #nomeCompleto type="text" required autofocus capitalize title="Escreva o seu nome completo"  placeholder="Seu nome completo" maxlength="50" minlength="3">
            
             <label>E-mail</label>
-            <input type="email" required title="Escreva o seu melhor e-mail" autocomplete="email"  placeholder="Seu melhor e-mail">
+            <input type="email" required title="Escreva o seu melhor e-mail" autocomplete="email"  placeholder="Seu e-mail" maxlength="50" data-js="email">
            
             <label>Celular</label>
-            <input type="text" required title="coloque o número do celular" pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$" placeholder="(00) 00000-0000">
+            <input type="text" required title="coloque o número do celular"  placeholder="Número com DDD" data-js="celular">
            
             <label>Número do CPF</label>
-            <input type="text" required pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" title="Coloque o número do seu CPF" placeholder="Somente números">
+            <input type="text" required title="Coloque o número do seu CPF" placeholder="Somente números" data-js="cpf">
 
-            <a class="termos-uso">Termos de Uso e Privacidade</a>
+            <a class="termos-uso" href="#">Termos de Uso e Privacidade</a>
            
-            <button class="btn-modal" type="submit" value="Enviar" >Enviar meus dados</button>
+            <a class="btn-modal" type="submit" href="adequacao.html">Enviar meus dados</a>
 
         </form>
         
     </div>
+    
+<!-- FIM MODAL CADASTRO===========================-->
+
+<!-- INÍCIO MODAL ADEQUACAO=======================-->
+
+    <div id="modalAdequacao" class="modal-container">
+
+        <div class="modal-content-adequacao">
+
+            <div>
+                
+                <span class="btn-fechar1">X</span>
+                
+            </div>
+
+            <h2>Crédito para Adequação</h2>
+
+            <img src="img/frango-galpao.png" width="90%" alt= "AgroForte">
+          
+            <h3>Foque em sua operação!</h3>
+  
+            <p>**ESPECIFICAR PRODUTO**<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p><br>
+            
+            <a class="btn-modal-produtos" href="adequacao.html">Contratar</a>
+        
+        </div>
+        
+    </div>
+
+<!-- FIM MODAL ADEQUACAO===========================-->
+
+<!-- INÍCIO MODAL CUSTEIO==========================-->
+<!-- FIM MODAL CUSTEIO=============================-->
+<!-- INÍCIO MODAL ANTECIPAÇÃO======================-->
+<!-- FIM MODAL ANTECIPAÇÃO=========================-->
 
     <script src="https://kit.fontawesome.com/3479e9d6ad.js" crossorigin="anonymous"></script>
-
-    <script src="js/script.js"></script>
+    
+    <script src="js/modal.js"></script>
 
 </body>
 </html>

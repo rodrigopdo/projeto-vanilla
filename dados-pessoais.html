@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+   
+    <title>Dados Pessoais</title>
+  
+</head>
+
+<body>
+
+    <header class="header">
+        
+            <div class="logo">
+                
+                <a href="index.html">
+                    <img src="img/logo-agro-ventura.png" alt="">
+            </a>
+            
+        </div>
+        
+        <nav class="navegacao">
+            
+            <input type="checkbox" class="toggleMenu">
+            
+            <div class="hamburger"></div>
+            
+            
+            <ul class="menu">   
+                <li>
+                    <a href="index.html">Página Inicial</a>
+                </li>
+                
+                <li>
+                    <a href="#">Produtos</a>
+                </li>
+                
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>     
+            
+        </nav>
+        
+    </header>
+      
+<!--FIM DA NAVBAR=========================-->
+
+    <div class="container-sm">
+
+        <form id="formEndereco">
+
+            <h2>Vamos precisar de ter mais algumas informações pessoais para continuar</h2>
+                
+            <h3><i class="fa fa-user-circle"></i> Dados Pessoais</h3>
+        
+            <div class="grid-4-5-3-col">
+            
+                <div class="label-float">
+            
+                    <input id="nacionalidade" type="text" name="nacionalidade" title="Informe o número da sua nacionalidade" required autofocus placeholder="#">
+            
+                    <label>Nacionalidade</label>
+        
+                </div>
+
+                <div class="label-float">
+            
+                    <input id="localNascimento" type="text" name="localNascimento" title="Informe a cidade onde você nasceu" required capitalize placeholder="#"> 
+            
+                    <label class="localNascimento">Local de Nascimento</label>
+        
+                </div>
+
+                <div class="label-float">
+            
+                    <select id="genero" title="Informe o seu gênero" placeholder="#">
+                        <option selected>Selecione..</option>
+                        <option value="1">Feminino</option>
+                        <option value="2">Masculino</option>
+                        <option value="3">Prefiro não informar</option>  
+                    </select> 
+            
+                    <label>Gênero</label>
+            
+                </div>
+        
+            </div>
+            
+            <div class="grid-8-4-col">
+            
+                <div class="label-float"> 
+                
+                    <input id="nomeDaMae" type="text" name="nomeDaMae" title="Informe o nome da sua mãe" required placeholder="#">
+                
+                    <label>Nome da Mãe</label>
+            
+                </div>
+
+                <div class="label-float">
+                
+                    <select id="estadoCivil" title="Informe o seu gênero" placeholder="#">
+                        <option selected>Selecione..</option>
+                        <option value="1">Solteiro</option>
+                        <option value="2">Casado</option>
+                        <option value="3">Víuvo</option>  
+                        <option value="4">Amasiado</option>  
+                    </select> 
+                
+                    <label>Estado Civil</label>
+            
+                </div>
+            
+            </div>
+            
+            <div class="grid-6-2-4-col">
+            
+                <div class="label-float">
+            
+                    <input id="numeroRg" type="text" title="Informe o número do seu documento de identidade" required placeholder="#" data-js="rg">
+            
+                    <label>Número do RG</label>
+        
+                </div>
+
+                <div class="label-float">
+            
+                    <select id="ufRg">
+                        <option selected>Estado..</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select> 
+            
+                    <label>UF</label>
+        
+                </div>
+
+                <div class="label-float">
+            
+                    <input id="expeditorRg" type="text" name="expeditorRg" title="Informe o orgão expeditor do documento" required uppercase placeholder="#"> 
+            
+                    <label for="bairro">Orgão Expeditor</label>
+            
+                </div>
+        
+            </div>
+
+            <a class="btn-outline-rounded" href="dados-bancarios.html"><i class="fas fa-arrow-right"></i></a>
+
+        </form> 
+
+        <img src="img/ilust-jumbox.png" alt="Agroforte" style="height: 300px; width: 70%; margin: 40px auto 100px; "> 
+
+    </div>
+  
+    <footer>
+        <p>&copy; 2020 - Agroforte - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/modal.js"></script>
+
+ 
+    <script src="https://kit.fontawesome.com/3479e9d6ad.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
